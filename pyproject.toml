@@ -1,0 +1,28 @@
+[tool.ruff]
+line-length = 79
+exclude = [".venv", "dist", "*.egg-info", "build"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "D",   # pydocstyle
+    "PL",  # Pylint
+    "B",   # flake8-bugbear
+    "BLE", # flake8-blind-except
+    "F",   # Pyflakes
+    "I",   # isort
+    "N",   # pep8-naming (regla adicional)
+    "UP",  # pyupgrade (regla adicional)
+    "C90", # mccabe complexity (regla adicional)
+    "RUF", # Ruff-specific rules (regla adicional)
+    "SIM"  # flake8-simplify (regla adicional)
+]
+preview = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
