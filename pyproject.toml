@@ -1,6 +1,6 @@
 [tool.ruff]
 line-length = 79
-exclude = [".venv", "dist", "*.egg-info", "build"]
+exclude = [".venv","venv", "dist", "*.egg-info", "build"]
 
 [tool.ruff.lint]
 select = [
